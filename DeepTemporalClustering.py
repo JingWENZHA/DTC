@@ -456,7 +456,7 @@ if __name__ == "__main__":
     #parser.add_argument('--validation', default=False, type=bool, help='use train/validation split')
     parser.add_argument('--ae_weights', default=None, help='pre-trained autoencoder weights')
     parser.add_argument('--n_clusters', default=6, type=int, help='number of clusters')
-    parser.add_argument('--n_filters', default= 10, type=int, help='number of filters in convolutional layer')
+    parser.add_argument('--n_filters', default=30, type=int, help='number of filters in convolutional layer')
     parser.add_argument('--kernel_size', default=10, type=int, help='size of kernel in convolutional layer')
     parser.add_argument('--strides', default=1, type=int, help='strides in convolutional layer')
     parser.add_argument('--pool_size', default=3, type=int, help='pooling size in max pooling layer')
