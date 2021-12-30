@@ -462,7 +462,7 @@ if __name__ == "__main__":
     parser.add_argument('--pool_size', default=3, type=int, help='pooling size in max pooling layer')
     parser.add_argument('--n_units', nargs=2, default=[50, 1], type=int, help='numbers of units in the BiLSTM layers')
     parser.add_argument('--gamma', default=0.1, type=float, help='coefficient of clustering loss')
-    parser.add_argument('--alpha', default=1.0, type=float, help='coefficient in Student\'s kernel')
+    parser.add_argument('--alpha', default=0.1, type=float, help='coefficient in Student\'s kernel')
     parser.add_argument('--dist_metric', default='eucl', type=str, choices=['eucl', 'cid', 'cor', 'acf'], help='distance metric between latent sequences')
     parser.add_argument('--cluster_init', default='kmeans', type=str, choices=['kmeans', 'hierarchical'], help='cluster initialization method')
     parser.add_argument('--heatmap', default=False, type=bool, help='train heatmap-generating network')
