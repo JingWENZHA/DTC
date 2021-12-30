@@ -538,7 +538,10 @@ if __name__ == "__main__":
         results = {}
         q = dtc.model.predict(X_train)[1]
         y_pred = q.argmax(axis=1)
-        print(len(set(y_pred)))
+        if(len(set(y_pred))>3):
+            print("---------------------------------------------------------------------")
+            print(y_pred)
+            print("---------------------------------------------------------------------")
         np.save('/content/drive/MyDrive/DTC/pred_label.npy',y_pred)
         # if y_train is not None:
         #     results['acc'] = cluster_acc(y_train, y_pred)
