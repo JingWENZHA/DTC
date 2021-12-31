@@ -527,7 +527,7 @@ if __name__ == "__main__":
     dtc.init_cluster_weights(X_train)
 
     # Fit model
-    for i in range(30):
+    for i in range(100):
         t0 = time()
         dtc.fit(X_train, None, X_val, y_val, args.epochs, args.eval_epochs, args.save_epochs, args.batch_size,
                 args.tol, args.patience, args.finetune_heatmap_at_epoch, args.save_dir)
